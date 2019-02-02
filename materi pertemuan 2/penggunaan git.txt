@@ -1,0 +1,75 @@
+D:\yucoding>git init
+Reinitialized existing Git repository in D:/yucoding/.git/
+
+D:\yucoding>git add .
+
+D:\yucoding>git commit -m "menambahkan index"
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'Dicky@DESKTOP-0EB7G8H.(none)')
+
+D:\yucoding>git config --global user.email "jahghan@gmail.com"
+
+D:\yucoding>git config --global user.name "jahghan"
+
+D:\yucoding>git commit -m "menambahkan index"
+[master (root-commit) 0625b67] menambahkan index
+ 2 files changed, 108 insertions(+)
+ create mode 100644 form.html
+ create mode 100644 index.html
+
+D:\yucoding>git log
+commit 0625b6705459d78cbd4145eebcf990d72ac61019 (HEAD -> master)
+Author: jahghan <jahghan@gmail.com>
+Date:   Sat Feb 2 09:16:02 2019 +0700
+
+    menambahkan index
+
+D:\yucoding>git log --oneline
+0625b67 (HEAD -> master) menambahkan index
+
+D:\yucoding>git diff
+diff --git a/index.html b/index.html
+index a5494cd..699258a 100644
+--- a/index.html
++++ b/index.html
+@@ -4,7 +4,7 @@
+         <title>coba-coba</title>
+       </head>
+       <body>
+-        <h1>Wellcome</h1>
++        <h1>Wellcome Jahghan</h1>
+         <blockquote>jahghan</blockquote>
+         <ul>
+             <li>List 1</li>
+
+D:\yucoding>git commit -m "menambahkan title"
+On branch master
+Changes not staged for commit:
+        modified:   index.html
+
+no changes added to commit
+
+D:\yucoding>git add .
+
+D:\yucoding>git commit -m "menambahkan title"
+[master 21dcfbe] menambahkan title
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+D:\yucoding>git log --online
+fatal: unrecognized argument: --online
+
+D:\yucoding>git log --oneline
+21dcfbe (HEAD -> master) menambahkan title
+0625b67 menambahkan index
+
+D:\yucoding>
